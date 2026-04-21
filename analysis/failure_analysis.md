@@ -60,4 +60,5 @@ Báo cáo này được trích xuất từ hệ thống **Evaluation Factory** s
    => **Giải pháp:** Xây dựng bộ tiêu chí chấm điểm (Rubric) cực kỳ chi tiết gửi kèm vào Prompt của Judge để bắt buộc các mô hình tuân theo.
 
 ---
-**Nhóm thực hiện:** AI Evaluation Engineering Team
+**Nhóm thực hiện:** 04
+
