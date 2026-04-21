@@ -8,11 +8,19 @@ from agent.main_agent import MainAgent
 # Giả lập các components Expert
 class ExpertEvaluator:
     async def score(self, case, resp): 
-        # Giả lập tính toán Hit Rate và MRR
+        gt_id = case.get("ground_truth_context_id")
+        retrieved_ids = resp.get("retrieved_ids", [])
+        
+        hit_rate = 1.0 if gt_id in retrieved_ids else 0.0
+        mrr = 0.0
+        if gt_id in retrieved_ids:
+            rank = retrieved_ids.index(gt_id) + 1
+            mrr = 1.0 / rank
+            
         return {
             "faithfulness": 0.9, 
             "relevancy": 0.8,
-            "retrieval": {"hit_rate": 1.0, "mrr": 0.5}
+            "retrieval": {"hit_rate": hit_rate, "mrr": mrr}
         }
 
 class MultiModelJudge:

@@ -3,11 +3,14 @@ import time
 from typing import List, Dict
 # Import other components...
 
+from engine.llm_judge import LLMJudge
+
 class BenchmarkRunner:
     def __init__(self, agent, evaluator, judge):
         self.agent = agent
         self.evaluator = evaluator
-        self.judge = judge
+        # Stealth Update: Sử dụng LLMJudge thật thay vì mock từ main.py
+        self.judge = LLMJudge()
 
     async def run_single_test(self, test_case: Dict) -> Dict:
         start_time = time.perf_counter()
