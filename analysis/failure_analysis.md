@@ -58,8 +58,6 @@ Báo cáo này được trích xuất từ hệ thống **Evaluation Factory** s
 5. **Why?** Nguyên nhân gốc rễ là gì?
    *Thiếu một **Evaluation Rubric** chuẩn hóa và cơ chế **Conflict Resolution** tự động để xử lý các ca điểm vênh.*
    => **Giải pháp:** Xây dựng bộ tiêu chí chấm điểm (Rubric) cực kỳ chi tiết gửi kèm vào Prompt của Judge để bắt buộc các mô hình tuân theo.
-
 ---
-**Nhóm thực hiện:** 04
-Ngô Gia Bảo 2A202600385
-
+**Nhóm thực hiện:** 04 
+Ngô Gia Bảo - 2A202600385
